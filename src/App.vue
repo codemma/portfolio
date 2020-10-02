@@ -9,8 +9,13 @@
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: "Garamond-Bold";
+  src: local("Garamond"),
+    url(./fonts/EBGaramond/EBGaramond-Bold.ttf) format("truetype");
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Garamond-Bold, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
