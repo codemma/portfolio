@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">Hi! My name is Emma Tysk</div>
+  <div class="hello"></div>
 </template>
 
 <script>
@@ -13,14 +13,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@font-face {
-  font-family: "Garamond-Bold";
-  src: local("Garamond"),
-    url(../fonts/EBGaramond/EBGaramond-Bold.ttf) format("truetype");
-}
-h3 {
-  margin: 40px 0 0;
-}
 ul {
   list-style-type: none;
   padding: 0;
