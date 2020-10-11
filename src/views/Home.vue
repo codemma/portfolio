@@ -18,13 +18,13 @@
               src="https://source.unsplash.com/1600x900/?art"
               alt="brezza design"
             />
-            <div @mouseover.stop="childMouseOver" class="hover">
+            <div class="hover">
               <div class="text">Hover test</div>
             </div>
           </div>
         </div>
       </div>
-      <div class="gallery-container">
+      <div class="gallery-container h-2">
         <div
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
@@ -97,9 +97,6 @@ export default {
       event.target.classList.remove("transition-out");
       this.hover = true;
     },
-    childMouseOver(event) {
-      //event.stopPropagation();
-    },
   },
 };
 </script>
@@ -156,6 +153,10 @@ export default {
     transform: scale(1);
     -webkit-transform: scale(1);
   }
+}
+
+.h-2 {
+  grid-row: span 1.2;
 }
 
 .gallery-item:hover .hover {
