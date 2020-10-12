@@ -1,8 +1,6 @@
 <template>
   <div class="home tall">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
     <section class="first-section">
-      <div class="l-heading">Hej hej!</div>
       <div class="l-heading">Emma Tysk</div>
     </section>
     <section class="container">
@@ -12,16 +10,13 @@
           @mouseleave="mouseLeave"
           class="gallery-item"
         >
-          <div class="image">
+          <router-link to="/Brezza" class="image">
             <!-- @mouseover="mouseOver" -->
-            <img
-              src="https://source.unsplash.com/1600x900/?art"
-              alt="brezza design"
-            />
+            <img src="../assets/brezza.png" alt="brezza design" />
             <div class="hover">
-              <div class="text">Hover test</div>
+              <div class="text">Brezza Logo design</div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
       <div class="gallery-container h-2">
@@ -77,15 +72,11 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
   data() {
     return {};
-  },
-  components: {
-    HelloWorld,
   },
   methods: {
     mouseLeave(event) {
@@ -163,6 +154,7 @@ export default {
   visibility: visible;
   //transform: translate(10px, 10px);
 }
+
 .gallery-item .hover {
   visibility: hidden;
   background-color: pink;
@@ -170,10 +162,15 @@ export default {
   width: 100%;
   position: absolute;
   transition: 0.1s ease-in-out;
+  text-align: left;
   top: 0;
   .text {
+    margin: 20px;
+    font-family: Garamond-Bold, Helvetica, Arial, sans-serif;
     pointer-events: none;
-    color: white;
+    font-size: 24px;
+    color: black;
+    font-weight: black;
   }
 }
 .first-section {
