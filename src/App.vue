@@ -14,6 +14,22 @@
   src: local("Garamond"),
     url(./fonts/EBGaramond/EBGaramond-Bold.ttf) format("truetype");
 }
+@font-face {
+  font-family: "IBMPlexMono-Regular";
+  src: local("IBMPlexMono-Regular"),
+    url(./fonts/IBMPlexMono/IBMPlexMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "LibreBaskerville";
+  src: local("LibreBaskerville-Regular"),
+    url(./fonts/LibreBaskerville/LibreBaskerville-Regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "LibreBaskerville";
+  src: local("LibreBaskerville-Italic"),
+    url(./fonts/LibreBaskerville/LibreBaskerville-Italic.ttf) format("truetype");
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
