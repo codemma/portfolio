@@ -40,6 +40,7 @@ export default {
   height: 400px;
   object-fit: cover;
   object-position: 50% 50%;
+  margin-bottom: 40px;
 }
 
 .work-text {

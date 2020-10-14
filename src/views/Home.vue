@@ -19,19 +19,33 @@
           </router-link>
         </div>
       </div>
-      <div class="gallery-container h-2">
+      <div class="gallery-container">
+        <div
+          class="gallery-item"
+          @mouseenter="mouseOver"
+          @mouseleave="mouseLeave"
+        >
+          <div class="image">
+            <img src="../assets/kgt-preview.png" alt="Vårdkällan" />
+          </div>
+          <div class="hover">
+            <div class="text">
+              <p>Vårdkällan</p>
+              <p>App design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-container">
         <div
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
           class="gallery-item"
         >
           <div class="image">
-            <img
-              src="https://source.unsplash.com/1600x900/?art"
-              alt="brezza design"
-            />
+            <img src="../assets/powr.png" alt="power app design" />
             <div class="hover">
-              <div class="text">Hover test</div>
+              <div class="text">App design</div>
             </div>
           </div>
         </div>
@@ -44,11 +58,13 @@
         >
           <div class="image">
             <img
-              src="https://source.unsplash.com/1600x900/?people"
-              alt="brezza design"
+              src="../assets/togather-preview.png"
+              alt="Togather app design"
             />
           </div>
-          <div class="text">Brezza</div>
+          <div class="hover">
+            <div class="text">App design</div>
+          </div>
         </div>
       </div>
       <div class="gallery-container">
@@ -58,12 +74,11 @@
           @mouseleave="mouseLeave"
         >
           <div class="image">
-            <img
-              src="https://source.unsplash.com/1600x900/?nature"
-              alt="brezza design"
-            />
+            <img src="../assets/pantad-preview.png" alt="Togather app design" />
           </div>
-          <div class="text">Brezza</div>
+          <div class="hover">
+            <div class="text">App design - Pantad</div>
+          </div>
         </div>
       </div>
     </section>
@@ -101,13 +116,13 @@ export default {
   width: 100%;
 }
 .container {
-  margin: 0 6em;
+  margin: 0 8em;
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 200px 300px;
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 350px;
+  grid-gap: 60px;
 }
 .gallery-item {
   width: 100%;
@@ -147,7 +162,7 @@ export default {
 }
 
 .h-2 {
-  grid-row: span 1.2;
+  grid-row: span 2;
 }
 
 .gallery-item:hover .hover {
