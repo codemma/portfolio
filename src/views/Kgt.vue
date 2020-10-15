@@ -1,6 +1,5 @@
 <template>
   <div class="work-page">
-    <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Vårdkällan</div>
       <div class="h4">App design and Illustrations</div>
@@ -13,15 +12,30 @@
       </div>
     </div>
     <div class="h3 mb-l">App design</div>
-    <div class="gallery">
-      <div class="image">
-        <img src="../assets/kgt/screen-1.png" alt="kgt  design" />
+    <div class="gallery-container">
+      <div id="divider-background" />
+      <div class="gallery">
+        <div class="image">
+          <img src="../assets/kgt/screen-1.png" alt="kgt  design" />
+        </div>
+        <div class="image">
+          <img src="../assets/kgt/screen-2.png" alt="kgt  design" />
+        </div>
+        <div class="image">
+          <img src="../assets/kgt/screen-3.png" alt="kgt design" />
+        </div>
       </div>
-      <div class="image">
-        <img src="../assets/kgt/screen-2.png" alt="kgt  design" />
-      </div>
-      <div class="image">
-        <img src="../assets/kgt/screen-3.png" alt="kgt design" />
+      <div class="h3 mb-l">App design</div>
+      <div class="gallery">
+        <div class="image">
+          <img src="../assets/kgt/screen-1.png" alt="kgt  design" />
+        </div>
+        <div class="image">
+          <img src="../assets/kgt/screen-2.png" alt="kgt  design" />
+        </div>
+        <div class="image">
+          <img src="../assets/kgt/screen-3.png" alt="kgt design" />
+        </div>
       </div>
     </div>
   </div>
@@ -37,10 +51,10 @@ export default {
 .work-page {
   width: 100%;
   min-height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .work-text {
   margin: 18px;
@@ -53,19 +67,30 @@ export default {
 }
 #divider-background {
   background-image: url("../assets/kgt/divider.png");
-  background-size: cover;
-  //background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 100%;
   position: absolute;
+  top: -40%;
   z-index: 9;
-  top: 10%;
 }
 .gallery .image {
   width: 100%;
   height: 100%;
   margin-bottom: 40px;
   z-index: 10;
+}
+
+.gallery-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .mb-sm {
@@ -87,6 +112,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 460px;
+  position: relative;
+  max-width: 400px;
 }
 
 .h1 {
