@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Brezza from '../views/Brezza.vue'
+import Kgt from '../views/Kgt.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/brezza',
     name: 'Brezza',
     component: Brezza
+  },
+  {
+    path: '/kgt',
+    name: 'Kgt',
+    component: Kgt
   },
   {
     path: '/about',
