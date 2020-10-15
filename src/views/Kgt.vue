@@ -1,5 +1,5 @@
 <template>
-  <div class="work-page">
+  <div class="work-page m-b-50">
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Vårdkällan</div>
