@@ -25,15 +25,16 @@
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
         >
-          <div class="image">
+          <router-link to="/Kgt" class="image">
             <img src="../assets/kgt-preview.png" alt="Vårdkällan" />
-          </div>
-          <div class="hover">
-            <div class="text">
-              <p>Vårdkällan</p>
-              <p>App design</p>
+
+            <div class="hover">
+              <div class="text">
+                <p>Vårdkällan</p>
+                <p>App design</p>
+              </div>
             </div>
-          </div>
+          </router-link>
         </div>
       </div>
       <div class="gallery-container">
@@ -57,13 +58,10 @@
           @mouseleave="mouseLeave"
         >
           <div class="image">
-            <img
-              src="../assets/togather-preview.png"
-              alt="Togather app design"
-            />
+            <img src="../assets/pantad-preview.png" alt="Togather app design" />
           </div>
           <div class="hover">
-            <div class="text">App design</div>
+            <div class="text">App design - Pantad</div>
           </div>
         </div>
       </div>
@@ -74,10 +72,13 @@
           @mouseleave="mouseLeave"
         >
           <div class="image">
-            <img src="../assets/pantad-preview.png" alt="Togather app design" />
+            <img
+              src="../assets/togather-preview.png"
+              alt="Togather app design"
+            />
           </div>
           <div class="hover">
-            <div class="text">App design - Pantad</div>
+            <div class="text">App design</div>
           </div>
         </div>
       </div>
@@ -106,7 +107,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 @import "../styles/_mixins.scss";
 .home {
   text-align: center;
@@ -117,13 +118,20 @@ export default {
   width: 100%;
 }
 .container {
-  margin: 0 8em;
+  margin: 0 6em;
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 350px);
-  grid-auto-rows: 350px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 260px;
   grid-gap: 60px;
+
+  @include for-phone-only {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px;
+    margin: 0 3em;
+    grid-gap: 20px;
+  }
 }
 .gallery-item {
   width: 100%;
