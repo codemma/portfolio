@@ -3,24 +3,20 @@
     <div class="container">
       <div class="work-text">
         <div class="header">Brezza</div>
-        <div class="sub-header">Logo for a restaurant in Uppsala</div>
+        <div class="sub-header">Graphic design</div>
         <div class="main-text">
           <p>
-            I was asked to design a logo for a Italian restaurant in my hometown
+            I was hired to design a logo for a Italian restaurant in my hometown
             Uppsala.
           </p>
-          <p>
-            The owner wanted something to represent the main features of the
-            restaurant such as its focus on good Italian wine and the
-            inspiration for the name, a breeze in southern Italy
-          </p>
+          <p>lorem ipsu</p>
           .
         </div>
       </div>
-      <div class="gallery">
-        <div class="image">
-          <img src="../assets/brezza.png" alt="brezza design" />
-        </div>
+    </div>
+    <div class="gallery">
+      <div class="image">
+        <img src="../assets/brezza.png" alt="brezza design" />
       </div>
     </div>
   </div>
@@ -32,19 +28,17 @@ export default {
   props: {},
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .gallery .image img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   object-position: 50% 50%;
   margin-bottom: 40px;
 }
 
 .work-text {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 14px;
 }
 
@@ -56,16 +50,17 @@ export default {
 }
 
 .container {
-  width: 30%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .header {
   font-family: LibreBaskerville-Regular, sans-serif;
   font-weight: 800;
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .sub-header {
   font-family: LibreBaskerville-Italic, sans-serif;
