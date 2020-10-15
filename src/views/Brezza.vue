@@ -16,7 +16,7 @@
     </div>
     <div class="gallery">
       <div class="image">
-        <img src="../assets/brezza.png" alt="brezza design" />
+        <img src="../../public/img/brezza.png" alt="brezza design" />
       </div>
     </div>
   </div>

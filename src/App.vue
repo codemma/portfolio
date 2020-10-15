@@ -38,7 +38,9 @@
   color: #2c3e50;
   height: 100%;
 }
-
+body {
+  margin: 0;
+}
 #nav {
   padding: 30px;
 

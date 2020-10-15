@@ -12,7 +12,7 @@
         >
           <router-link to="/Brezza" class="image">
             <!-- @mouseover="mouseOver" -->
-            <img src="../assets/brezza.png" alt="brezza design" />
+            <img src="../../public/img/brezza.png" alt="brezza design" />
             <div class="hover">
               <div class="text">Brezza Logo design</div>
             </div>
@@ -26,7 +26,7 @@
           @mouseleave="mouseLeave"
         >
           <router-link to="/Kgt" class="image">
-            <img src="../assets/kgt-preview.png" alt="Vårdkällan" />
+            <img src="../../public/img/kgt-preview.png" alt="Vårdkällan" />
 
             <div class="hover">
               <div class="text">
@@ -44,7 +44,7 @@
           class="gallery-item"
         >
           <div class="image">
-            <img src="../assets/powr.png" alt="power app design" />
+            <img src="../../public/img/powr.png" alt="power app design" />
             <div class="hover">
               <div class="text">App design</div>
             </div>
@@ -58,7 +58,10 @@
           @mouseleave="mouseLeave"
         >
           <div class="image">
-            <img src="../assets/pantad-preview.png" alt="Togather app design" />
+            <img
+              src="../../public/img/pantad-preview.png"
+              alt="Togather app design"
+            />
           </div>
           <div class="hover">
             <div class="text">App design - Pantad</div>
@@ -73,7 +76,7 @@
         >
           <div class="image">
             <img
-              src="../assets/togather-preview.png"
+              src="../../public/img/togather-preview.png"
               alt="Togather app design"
             />
           </div>

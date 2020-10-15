@@ -4,43 +4,59 @@
     <div class="work-text">
       <div class="h1">Vårdkällan</div>
       <div class="h4"><i>App design and Illustrations</i></div>
-      <div class="main-text mt-l">
+      <div class="main-text m-t-20">
         <p>
-          I was responsible for the design of the app for a healthcare company
-          in Uppsala
+          I was responsible for the UX and UI design of the app for a healthcare
+          company in Uppsala
         </p>
-        <p>Lorem ipsum</p>
+        <p>
+          The goal of the app is to make it easier and more flexible for nurses
+          and other healthcare professionals to find work at different
+          hospitals. In the app you can apply for a job which fit your
+          credentials, and you can also report the time you spent working there
+          after finishing a job.
+        </p>
+        <p>
+          The project scope was very time limited and therefore I had to produce
+          a full design with sketches in only 3 weeks. Below are some selected
+          screens and illustrations from the finished design.
+        </p>
       </div>
     </div>
-    <div class="h3 mb-l">App design</div>
-    <div class="gallery-3-row mb-l">
-      <div class="image">
-        <img src="../assets/kgt/screen-1.png" alt="kgt design" />
+    <div class="h3 m-b-30">App design</div>
+    <div class="gallery-container">
+      <div class="blue-divider">
+        <img src="../../public/img/kgt/divider.png" alt="kgt design" />
       </div>
-      <div class="image">
-        <img src="../assets/kgt/screen-2.png" alt="kgt design" />
-      </div>
-      <div class="image">
-        <img src="../assets/kgt/screen-3.png" alt="kgt design" />
+      <div class="gallery-3-col m-b-50">
+        <div class="image">
+          <img src="../../public/img/kgt/screen-1.png" alt="kgt design" />
+        </div>
+        <div class="image">
+          <img src="../../public/img/kgt/screen-2.png" alt="kgt design" />
+        </div>
+        <div class="image">
+          <img src="../../public/img/kgt/screen-3.png" alt="kgt design" />
+        </div>
       </div>
     </div>
-    <div class="h3 mb-l">Illustrations</div>
-    <div class="gallery-2-row">
+    <div class="h3 m-b-30">Illustrations</div>
+    <div class="gallery-2-col">
       <div class="image">
-        <img src="../assets/kgt/getApp.png" alt="kgt  design" />
+        <img src="../../public/img/kgt/getApp.png" alt="kgt  design" />
       </div>
       <div class="h4 text-left bold">1. Get the app</div>
       <div class="h4 text-right bold">2. Search and apply for work</div>
       <div class="image">
-        <img src="../assets/kgt/chooseWork.png" alt="kgt  design" />
+        <img src="../../public/img/kgt/chooseWork.png" alt="kgt  design" />
       </div>
       <div class="image">
-        <img src="../assets/kgt/choosePersonell.png" alt="kgt design" />
+        <img src="../../public/img/kgt/choosePersonell.png" alt="kgt design" />
       </div>
       <div class="h4 text-left bold">3. Get selected!</div>
       <div class="h4 text-right bold">4. Report your time</div>
       <div class="image">
-        <img src="../assets/kgt/reportTime.png" alt="kgt design" />
+        <img src="../../public/img/kgt/reportTime.png" alt="kgt design" />
       </div>
     </div>
   </div>
@@ -53,10 +69,11 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
 .work-page {
   width: 100%;
   min-height: 100vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,66 +83,91 @@ export default {
   margin: 18px;
   font-size: 14px;
   max-width: 400px;
-  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#divider-background {
-  background-image: url("../assets/kgt/divider.png");
+.gallery-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blue-divider {
+  position: absolute;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+/* #divider-background {
+  background-image: url("../../public/img/kgt/divider.png");
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: 0;
-  top: 18vh;
-}
-.gallery-3-row .image {
+  top: 24vh;
+  @include for-tablet-landscape-down {
+    top: 12vh;
+  }
+  @include for-phone-only {
+    display: none;
+  }
+} */
+.gallery-3-col .image {
   width: 100%;
   height: 100%;
-  margin-bottom: 40px;
   z-index: 10;
-}
-.mb-sm {
-  margin-bottom: 16px;
-}
-.mb-l {
-  margin-bottom: 50px;
-}
-.mb-s {
-  margin-bottom: 10px;
-}
-.mt-l {
-  margin-top: 50px;
 }
 
 .text-left {
   text-align: left;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .text-right {
   text-align: right;
   margin-right: 50px;
 }
 
-.gallery-3-row {
+.gallery-3-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 460px;
+  max-width: 800px;
+
+  @include for-tablet-landscape-down {
+    grid-auto-rows: 380px;
+  }
+
+  @include for-phone-only {
+    grid-auto-rows: 200px;
+  }
   img {
     max-width: 100%;
     max-height: 100%;
   }
 }
 
-.gallery-2-row {
+.gallery-2-col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 200px;
   align-items: center;
   justify-content: center;
   grid-gap: 10px;
-  max-width: 800px;
+  max-width: 600px;
+
+  @include for-phone-only {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 150px;
+    grid-gap: 20px;
+
+    .h4 {
+      display: none;
+    }
+  }
 
   .image {
     width: 100%;
@@ -140,27 +182,6 @@ export default {
     max-width: 100%;
     max-height: 100%;
   }
-}
-
-.h1 {
-  font-family: LibreBaskerville-Regular, sans-serif;
-  font-weight: 800;
-  font-size: 28px;
-}
-.h2 {
-  font-family: LibreBaskerville-Regular, sans-serif;
-  font-weight: 800;
-  font-size: 22px;
-}
-.h3 {
-  font-family: LibreBaskerville-Regular, sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-.h4 {
-  font-family: LibreBaskerville-Regular, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
 }
 
 .bold {
