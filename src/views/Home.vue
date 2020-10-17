@@ -1,8 +1,8 @@
 <template>
   <div class="home tall">
-    <section class="first-section">
+    <!--   <section class="first-section">
       <div class="l-heading">Emma Tysk</div>
-    </section>
+    </section> -->
     <section class="container">
       <div class="gallery-container">
         <div
@@ -184,7 +184,7 @@ export default {
 
 .gallery-item .hover {
   visibility: hidden;
-  background-color: pink;
+  background-color: #f79bf7;
   height: 100%;
   width: 100%;
   position: absolute;
