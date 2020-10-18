@@ -14,7 +14,7 @@
             <!-- @mouseover="mouseOver" -->
             <img src="../../public/img/brezza.png" alt="brezza design" />
             <div class="hover">
-              <div class="text">Brezza Logo design</div>
+              <div class="text">Brezza Logo designs</div>
             </div>
           </router-link>
         </div>
@@ -53,23 +53,21 @@
         </router-link>
       </div>
       <div class="gallery-container">
-        <router-link
-          to="/Pantad"
-          class="gallery-item"
+        <div
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
+          class="gallery-item"
         >
-          <div class="image">
-            <img
-              src="../../public/img/pantad-preview.png"
-              alt="Togather app design"
-            />
-          </div>
-          <div class="hover">
-            <div class="text">App design - Pantad</div>
-          </div>
-        </router-link>
+          <router-link to="/Pantad" class="image">
+            <!-- @mouseover="mouseOver" -->
+            <img :src="items[0].icon" alt="Togather app design" />
+            <div class="hover">
+              <div class="text">Brezza Logo design</div>
+            </div>
+          </router-link>
+        </div>
       </div>
+
       <div class="gallery-container">
         <router-link
           to="/Togather"
@@ -98,7 +96,11 @@
 export default {
   name: "Home",
   data() {
-    return {};
+    return {
+      items: [
+        { title: "Brezza", icon: require("@/assets/pantad/screen-1.png") },
+      ],
+    };
   },
   methods: {
     mouseLeave(event) {
@@ -160,17 +162,15 @@ export default {
 }
 .transition-out .image img {
   -webkit-transform: translateZ(0);
-  animation: leaves 0.8s ease-in;
+  animation: leaves 0.4s ease-in;
 }
 
 @keyframes leaves {
   0% {
-    opacity: 10%;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
   }
   100% {
-    opacity: 100%;
     transform: scale(1);
     -webkit-transform: scale(1);
   }
