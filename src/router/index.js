@@ -4,6 +4,8 @@ import Work from '../views/Home.vue'
 import Brezza from '../views/Brezza.vue'
 import Kgt from '../views/Kgt.vue'
 import Pantad from '../views/Pantad.vue'
+import Powr from '../views/Powr.vue'
+import Togather from '../views/Togather.vue'
 
 Vue.use(VueRouter)
 
@@ -14,9 +16,19 @@ const routes = [
     component: Work
   },
   {
+    path: '/Togather',
+    name: 'Togather',
+    component: Togather
+  },
+  {
     path: '/Pantad',
     name: 'Pantad',
     component: Pantad
+  },
+  {
+    path: '/Powr',
+    name: 'Powr',
+    component: Powr
   },
   {
     path: '/brezza',

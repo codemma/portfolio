@@ -38,7 +38,8 @@
         </div>
       </div>
       <div class="gallery-container">
-        <div
+        <router-link
+          to="/Powr"
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
           class="gallery-item"
@@ -49,7 +50,7 @@
               <div class="text">App design</div>
             </div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div class="gallery-container">
         <router-link
@@ -70,7 +71,8 @@
         </router-link>
       </div>
       <div class="gallery-container">
-        <div
+        <router-link
+          to="/Togather"
           class="gallery-item"
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
@@ -84,7 +86,7 @@
           <div class="hover">
             <div class="text">App design</div>
           </div>
-        </div>
+        </router-link>
       </div>
     </section>
   </div>
