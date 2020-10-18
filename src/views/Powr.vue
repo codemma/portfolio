@@ -10,16 +10,19 @@
           university project at Uppsala University
         </p>
         <p>
-          The goal of the app is to make it easier and more flexible for nurses
-          and other healthcare professionals to find work at different
-          hospitals. In the app you can apply for a job which fit your
-          credentials, and you can also report the time you spent working there
-          after finishing a job.
+          The goal of the project was to create an application to motivate
+          students who live in student corridors in Sweden to lessen their
+          energy consumption.
         </p>
         <p>
-          The project scope was very time limited and therefore I had to produce
-          a full design with sketches in only 3 weeks. Below are some selected
-          screens and illustrations from the finished design.
+          We came up with the idea to create a game where a student takes care
+          of an avatar of their choice. By staying below a certain energy
+          consumption treshhold, the avatar stays happy and the student gains
+          points. The users can also compete in different challenges weekly, to
+          keep them interested in the game. The corridor who has the lowest
+          consumption of the week is published on a scoreboard on the app. The
+          users also receive tips and tricks in the app on how to lower their
+          consumption.
         </p>
       </div>
     </div>
