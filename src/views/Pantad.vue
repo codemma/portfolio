@@ -7,19 +7,18 @@
       <div class="main-text m-t-20">
         <p>
           I was responsible for the UX and UI design of the app Pantad for a
-          university project at Uppsala University
+          project at Uppsala University.
         </p>
         <p>
-          The goal of the app is to make it easier and more flexible for nurses
-          and other healthcare professionals to find work at different
-          hospitals. In the app you can apply for a job which fit your
-          credentials, and you can also report the time you spent working there
-          after finishing a job.
+          The idea behind the app is to increase recycling by letting people
+          give their cans and bottles to others to recycle. The incentive to
+          recycle for others in Sweden is simple: you get money from recycling!
+          So this app could example be used by students, or anyone who is in
+          need of a bit of extra cash.
         </p>
         <p>
-          The project scope was very time limited and therefore I had to produce
-          a full design with sketches in only 3 weeks. Below are some selected
-          screens and illustrations from the finished design.
+          In the app users can see how much they have recycled, and also how
+          much money a reycling "mission" would get them.
         </p>
       </div>
     </div>
@@ -32,6 +31,9 @@
       </div>
       <div class="image m-b-20">
         <img src="../assets/pantad/screen-3.png" alt="pantad design" />
+      </div>
+      <div class="image m-b-20">
+        <img src="../assets/pantad/screen-5.png" alt="pantad design" />
       </div>
       <div class="image m-b-20">
         <img src="../assets/pantad/screen-4.png" alt="pantad design" />
