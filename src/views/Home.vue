@@ -52,7 +52,8 @@
         </div>
       </div>
       <div class="gallery-container">
-        <div
+        <router-link
+          to="/Pantad"
           class="gallery-item"
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
@@ -66,7 +67,7 @@
           <div class="hover">
             <div class="text">App design - Pantad</div>
           </div>
-        </div>
+        </router-link>
       </div>
       <div class="gallery-container">
         <div

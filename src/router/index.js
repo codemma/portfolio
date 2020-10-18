@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Work from '../views/Home.vue'
 import Brezza from '../views/Brezza.vue'
 import Kgt from '../views/Kgt.vue'
+import Pantad from '../views/Pantad.vue'
 
 Vue.use(VueRouter)
 
@@ -11,6 +12,11 @@ const routes = [
     path: '/',
     name: 'Work',
     component: Work
+  },
+  {
+    path: '/Pantad',
+    name: 'Pantad',
+    component: Pantad
   },
   {
     path: '/brezza',
