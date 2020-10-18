@@ -9,8 +9,13 @@
             I was hired to design a logo for a Italian restaurant in my hometown
             Uppsala.
           </p>
-          <p>lorem ipsu</p>
-          .
+          <p>
+            The owner wanted it to represent the vision he had for the
+            restaurant. A place with genuine Italian atmosphere with a focus on
+            wine, which he personally collects each year in Italy. In addition,
+            he wanted the inspiration for the name, a breeze in southern Italy -
+            <i>Brezza</i> - to be a component in the logo.
+          </p>
         </div>
       </div>
     </div>
