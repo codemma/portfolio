@@ -1,90 +1,22 @@
 <template>
   <div class="home tall">
-    <!--   <section class="first-section">
-      <div class="l-heading">Emma Tysk</div>
-    </section> -->
     <section class="container">
-      <div class="gallery-container">
+      <div class="gallery-container" v-for="work in works" :key="work.title">
         <div
           @mouseenter="mouseOver"
           @mouseleave="mouseLeave"
           class="gallery-item"
         >
-          <router-link to="/Brezza" class="image">
-            <!-- @mouseover="mouseOver" -->
-            <img src="../../public/img/brezza.png" alt="brezza design" />
+          <router-link :to="'/' + work.title" class="image">
+            <img :src="work.icon" alt="brezza design" />
             <div class="hover">
-              <div class="text">Brezza Logo designs</div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-      <div class="gallery-container">
-        <div
-          class="gallery-item"
-          @mouseenter="mouseOver"
-          @mouseleave="mouseLeave"
-        >
-          <router-link to="/Kgt" class="image">
-            <img src="../../public/img/kgt-preview.png" alt="Vårdkällan" />
-
-            <div class="hover">
-              <div class="text">
-                <p>Vårdkällan</p>
-                <p>App design</p>
+              <div class="hover-text">
+                <p class="title">{{ work.title }}</p>
+                <p class="subtitle">{{ work.hover }}</p>
               </div>
             </div>
           </router-link>
         </div>
-      </div>
-      <div class="gallery-container">
-        <router-link
-          to="/Powr"
-          @mouseenter="mouseOver"
-          @mouseleave="mouseLeave"
-          class="gallery-item"
-        >
-          <div class="image">
-            <img src="../../public/img/powr.png" alt="power app design" />
-            <div class="hover">
-              <div class="text">App design</div>
-            </div>
-          </div>
-        </router-link>
-      </div>
-      <div class="gallery-container">
-        <div
-          @mouseenter="mouseOver"
-          @mouseleave="mouseLeave"
-          class="gallery-item"
-        >
-          <router-link to="/Pantad" class="image">
-            <!-- @mouseover="mouseOver" -->
-            <img :src="items[0].icon" alt="Togather app design" />
-            <div class="hover">
-              <div class="text">Brezza Logo design</div>
-            </div>
-          </router-link>
-        </div>
-      </div>
-
-      <div class="gallery-container">
-        <router-link
-          to="/Togather"
-          class="gallery-item"
-          @mouseenter="mouseOver"
-          @mouseleave="mouseLeave"
-        >
-          <div class="image">
-            <img
-              src="../../public/img/togather-preview.png"
-              alt="Togather app design"
-            />
-          </div>
-          <div class="hover">
-            <div class="text">App design</div>
-          </div>
-        </router-link>
       </div>
     </section>
   </div>
@@ -97,8 +29,33 @@ export default {
   name: "Home",
   data() {
     return {
-      items: [
-        { title: "Brezza", icon: require("@/assets/pantad/screen-1.png") },
+      works: [
+        {
+          title: "Kgt",
+          hover: "App design for a healthcare company",
+          icon: require("@/assets/kgt/preview.png"),
+        },
+        {
+          title: "Powr",
+          hover: "An app designed to lower students energy consumption",
+          icon: require("@/assets/powr/preview.png"),
+        },
+        {
+          title: "Brezza",
+          hover: "Logo for italian restaurant",
+          icon: require("@/assets/brezza/preview.png"),
+        },
+        {
+          title: "Pantad",
+          icon: require("@/assets/pantad/preview.png"),
+          hover: "An app with the purpose of increasing recycling",
+        },
+        {
+          title: "Togather",
+          hover:
+            "An app with the purpose of connecting people with similar interests ",
+          icon: require("@/assets/togather/preview.png"),
+        },
       ],
     };
   },
@@ -126,13 +83,33 @@ export default {
   width: 100%;
 }
 .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+}
+
+.tall {
+  flex: 0 0 460px;
+}
+.container > * {
+  flex: 0 0 1;
+}
+.gallery-container {
+  flex: 0 0 260px;
+  margin: 20px;
+}
+
+/* .container {
   margin: 0 6em;
   max-width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 260px;
-  grid-gap: 60px;
+  grid-gap: 60px; 
 
   @include for-phone-only {
     grid-template-columns: 1fr;
@@ -140,19 +117,19 @@ export default {
     margin: 0 3em;
     grid-gap: 20px;
   }
-}
+} */
 .gallery-item {
+  height: 260px;
   width: 100%;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.gallery-item .image {
+/* .gallery-item .image {
   width: 100%;
   height: 100%;
   // overflow: hidden;
-}
+} */
 .gallery-item .image img {
   width: 100%;
   height: 100%;
@@ -182,26 +159,30 @@ export default {
 
 .gallery-item:hover .hover {
   visibility: visible;
-  //transform: translate(10px, 10px);
+}
+
+.hover-text {
+  margin: 22px;
+  font-family: Garamond-Bold, Helvetica, Arial, sans-serif;
+  pointer-events: none;
+  font-size: 25px;
+  color: black;
+
+  .subtitle {
+    font-family: IBMPlexMono-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+  }
 }
 
 .gallery-item .hover {
   visibility: hidden;
-  background-color: #f79bf7;
+  background-color: #ffcdff;
   height: 100%;
   width: 100%;
   position: absolute;
   transition: 0.1s ease-in-out;
   text-align: left;
   top: 0;
-  .text {
-    margin: 20px;
-    font-family: Garamond-Bold, Helvetica, Arial, sans-serif;
-    pointer-events: none;
-    font-size: 24px;
-    color: black;
-    font-weight: black;
-  }
 }
 .first-section {
   text-align: left;

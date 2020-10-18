@@ -26,37 +26,37 @@
     <div class="h3 m-b-30">App design</div>
     <div class="gallery-container">
       <div class="blue-divider">
-        <img src="../../public/img/kgt/divider.png" alt="kgt design" />
+        <img src="../assets/kgt/divider.png" alt="kgt design" />
       </div>
       <div class="gallery-3-col m-b-50">
         <div class="image">
-          <img src="../../public/img/kgt/screen-1.png" alt="kgt design" />
+          <img src="../assets/kgt/screen-1.png" alt="kgt design" />
         </div>
         <div class="image">
-          <img src="../../public/img/kgt/screen-2.png" alt="kgt design" />
+          <img src="../assets/kgt/screen-2.png" alt="kgt design" />
         </div>
         <div class="image">
-          <img src="../../public/img/kgt/screen-3.png" alt="kgt design" />
+          <img src="../assets/kgt/screen-3.png" alt="kgt design" />
         </div>
       </div>
     </div>
     <div class="h3 m-b-30">Illustrations</div>
     <div class="gallery-2-col">
       <div class="image">
-        <img src="../../public/img/kgt/getApp.png" alt="kgt  design" />
+        <img src="../assets/kgt/getApp.png" alt="kgt  design" />
       </div>
       <div class="h4 text-left bold">1. Get the app</div>
       <div class="h4 text-right bold">2. Search and apply for work</div>
       <div class="image">
-        <img src="../../public/img/kgt/chooseWork.png" alt="kgt  design" />
+        <img src="../assets/kgt/chooseWork.png" alt="kgt  design" />
       </div>
       <div class="image">
-        <img src="../../public/img/kgt/choosePersonell.png" alt="kgt design" />
+        <img src="../assets/kgt/choosePersonell.png" alt="kgt design" />
       </div>
       <div class="h4 text-left bold">3. Get selected!</div>
       <div class="h4 text-right bold">4. Report your time</div>
       <div class="image">
-        <img src="../../public/img/kgt/reportTime.png" alt="kgt design" />
+        <img src="../assets/kgt/reportTime.png" alt="kgt design" />
       </div>
     </div>
   </div>
