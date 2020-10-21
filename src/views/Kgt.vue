@@ -3,7 +3,7 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Vårdkällan</div>
-      <div class="h4">App design and Illustrations</div>
+      <div class="detail">App design and Illustrations</div>
       <div class="main-text m-t-20">
         <p>
           I was responsible for the UX and UI design of the app for a healthcare
@@ -45,16 +45,16 @@
       <div class="image">
         <img src="../assets/kgt/getApp.png" alt="kgt  design" />
       </div>
-      <div class="h3 text-left">1. Get the app</div>
-      <div class="h3 text-right">2. Search and apply for work</div>
+      <div class="h4 text-left">1. Get the app</div>
+      <div class="h4 text-right">2. Search and apply for work</div>
       <div class="image">
         <img src="../assets/kgt/chooseWork.png" alt="kgt  design" />
       </div>
       <div class="image">
         <img src="../assets/kgt/choosePersonell.png" alt="kgt design" />
       </div>
-      <div class="h3 text-left">3. Get selected!</div>
-      <div class="h3 text-right">4. Report your time</div>
+      <div class="h4 text-left">3. Get selected!</div>
+      <div class="h4 text-right">4. Report your time</div>
       <div class="image">
         <img src="../assets/kgt/reportTime.png" alt="kgt design" />
       </div>
@@ -87,6 +87,10 @@ export default {
   flex-direction: column;
   align-items: center;
   font-family: Avenir, sans-serif;
+  .detail {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic;
+  }
 }
 .gallery-container {
   width: 100%;
@@ -102,21 +106,6 @@ export default {
     max-height: 100%;
   }
 }
-/* #divider-background {
-  background-image: url("../../public/img/kgt/divider.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  top: 24vh;
-  @include for-tablet-landscape-down {
-    top: 12vh;
-  }
-  @include for-phone-only {
-    display: none;
-  }
-} */
 .gallery-3-col .image {
   width: 100%;
   height: 100%;

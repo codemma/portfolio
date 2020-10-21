@@ -139,7 +139,7 @@ export default {
   }
 
   .subtitle {
-    font-family: IBMPlexMono-Regular, Helvetica, Arial, sans-serif;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 14px;
   }
 }

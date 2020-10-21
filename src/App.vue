@@ -12,29 +12,9 @@
 </template>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=family=EB+Garamond:wght@400;500;600&display=swap&family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap&css2?family=IBM+Plex+Mono:ital@0;1&display=swap&family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap");
 @import "./styles/_mixins.scss";
-@font-face {
-  font-family: "Garamond-Bold";
-  src: local("Garamond"),
-    url(./fonts/EBGaramond/EBGaramond-Bold.ttf) format("truetype");
-}
-@font-face {
-  font-family: "IBMPlexMono-Regular";
-  src: local("IBMPlexMono-Regular"),
-    url(./fonts/IBMPlexMono/IBMPlexMono-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat-Regular"),
-    url(./fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "LibreBaskerville";
-  src: local("LibreBaskerville-Italic"),
-    url(./fonts/LibreBaskerville/LibreBaskerville-Italic.ttf) format("truetype");
-}
+
 .first-section {
   text-align: left;
   margin: auto;

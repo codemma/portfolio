@@ -3,7 +3,7 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Powr</div>
-      <div class="h4"><i>App design</i></div>
+      <div class="detail">App design</div>
       <div class="main-text m-t-20">
         <p>
           I was responsible for the UX and UI design of the app Pantad for a
@@ -94,6 +94,10 @@ export default {
   flex-direction: column;
   align-items: center;
   font-family: Avenir, sans-serif;
+  .detail {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic;
+  }
 }
 .bold {
   font-weight: bold;

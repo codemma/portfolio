@@ -3,7 +3,7 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Togather</div>
-      <div class="h4"><i>App design - Social computing</i></div>
+      <div class="detail">App design - Social computing</div>
       <div class="main-text m-t-20">
         <p></p>
       </div>
@@ -83,6 +83,10 @@ export default {
   flex-direction: column;
   align-items: center;
   font-family: Avenir, sans-serif;
+  .detail {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic;
+  }
 }
 .bold {
   font-weight: bold;

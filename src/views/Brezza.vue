@@ -3,7 +3,7 @@
     <div class="container">
       <div class="work-text">
         <div class="h1">Brezza</div>
-        <div class="h4">Graphic design</div>
+        <div class="detail">Graphic design</div>
         <div class="main-text">
           <p>
             I was hired to design a logo for a Italian restaurant in my hometown
@@ -48,6 +48,10 @@ export default {
 .work-text {
   margin-bottom: 18px;
   font-size: 14px;
+  .detail {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic;
+  }
 }
 
 .work-page {
