@@ -23,8 +23,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: "Home",
   data() {
@@ -61,11 +59,9 @@ export default {
   },
   methods: {
     mouseLeave(event) {
-      console.log("mouseleave", event.target.classList);
       event.target.className += " transition-out";
     },
     mouseOver(event) {
-      console.log("mouseover", event.target.classList);
       event.target.classList.remove("transition-out");
       this.hover = true;
     },
@@ -80,7 +76,6 @@ export default {
 }
 .tall {
   min-height: calc(100vh - 30px);
-  width: 100%;
 }
 .container {
   display: flex;
@@ -90,10 +85,6 @@ export default {
   margin: auto;
   justify-content: center;
 }
-
-.tall {
-  flex: 0 0 460px;
-}
 .container > * {
   flex: 0 0 1;
 }
@@ -102,34 +93,12 @@ export default {
   margin: 20px;
 }
 
-/* .container {
-  margin: 0 6em;
-  max-width: 100%;
-  height: 100%;
-  display: flex;
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 260px;
-  grid-gap: 60px; 
-
-  @include for-phone-only {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 240px;
-    margin: 0 3em;
-    grid-gap: 20px;
-  }
-} */
 .gallery-item {
   height: 260px;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-
-/* .gallery-item .image {
-  width: 100%;
-  height: 100%;
-  // overflow: hidden;
-} */
 .gallery-item .image img {
   width: 100%;
   height: 100%;
@@ -153,20 +122,21 @@ export default {
   }
 }
 
-.h-2 {
-  grid-row: span 2;
-}
-
 .gallery-item:hover .hover {
   visibility: visible;
 }
 
 .hover-text {
   margin: 22px;
-  font-family: Garamond-Bold, Helvetica, Arial, sans-serif;
+  font-family: "EB Garamond", Arial, sans-serif;
+
   pointer-events: none;
   font-size: 25px;
   color: black;
+
+  .title {
+    font-weight: 600;
+  }
 
   .subtitle {
     font-family: IBMPlexMono-Regular, Helvetica, Arial, sans-serif;
@@ -183,15 +153,5 @@ export default {
   transition: 0.1s ease-in-out;
   text-align: left;
   top: 0;
-}
-.first-section {
-  text-align: left;
-  margin: auto;
-  padding: 6em;
-}
-.l-heading {
-  text-align: left;
-  font-size: 60px;
-  font-family: Garamond-Bold, Helvetica, Arial, sans-serif;
 }
 </style>

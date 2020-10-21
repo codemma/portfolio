@@ -2,8 +2,8 @@
   <div class="work-page">
     <div class="container">
       <div class="work-text">
-        <div class="header">Brezza</div>
-        <div class="sub-header">Graphic design</div>
+        <div class="h1">Brezza</div>
+        <div class="h4">Graphic design</div>
         <div class="main-text">
           <p>
             I was hired to design a logo for a Italian restaurant in my hometown
@@ -13,9 +13,10 @@
             The owner wanted it to represent the vision he had for the
             restaurant. A place with genuine Italian atmosphere with a focus on
             wine, which he personally collects each year in Italy. In addition,
-            he wanted the inspiration for the name, a breeze in southern Italy -
-            <i>Brezza</i> - to be a component in the logo.
+            he wanted the inspiration for the name "a breeze in southern Italy"
+            - to be a component in the logo.
           </p>
+          <p>The result? See below!</p>
         </div>
       </div>
     </div>
@@ -34,6 +35,8 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "../styles/_mixins.scss";
+@import "../styles/_variables.scss";
 .gallery .image img {
   width: 300px;
   height: 300px;
@@ -68,7 +71,7 @@ export default {
   margin-bottom: 4px;
 }
 .sub-header {
-  font-family: LibreBaskerville-Italic, sans-serif;
+  font-family: IBMPlexMono-Regular, sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 14px;

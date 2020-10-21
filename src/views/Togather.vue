@@ -3,9 +3,9 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Togather</div>
-      <div class="h4"><i>App design - social computing</i></div>
+      <div class="h4"><i>App design - Social computing</i></div>
       <div class="main-text m-t-20">
-        <p>TODO</p>
+        <p></p>
       </div>
     </div>
     <div class="gallery-flex m-b-20">
@@ -47,6 +47,7 @@ export default {
   flex-direction: column;
   align-items: center;
   z-index: 3;
+  font-family: Avenir, sans-serif;
 }
 .span-row {
   min-width: 100%;
@@ -81,6 +82,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Avenir, sans-serif;
 }
 .bold {
   font-weight: bold;

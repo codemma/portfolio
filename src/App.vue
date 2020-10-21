@@ -12,6 +12,8 @@
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=family=EB+Garamond:wght@400;500;600&display=swap&family=Libre+Baskerville:wght@400;700&family=Montserrat&display=swap");
+
 @import "./styles/_mixins.scss";
 @font-face {
   font-family: "Garamond-Bold";
@@ -22,12 +24,6 @@
   font-family: "IBMPlexMono-Regular";
   src: local("IBMPlexMono-Regular"),
     url(./fonts/IBMPlexMono/IBMPlexMono-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "LibreBaskerville";
-  src: local("LibreBaskerville-Regular"),
-    url(./fonts/LibreBaskerville/LibreBaskerville-Regular.ttf)
-      format("truetype");
 }
 @font-face {
   font-family: "Montserrat";
@@ -49,7 +45,7 @@
 }
 .l-heading {
   font-size: 18px;
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -66,11 +62,11 @@ body {
   padding: 30px;
 
   a {
-    font-family: LibreBaskerville-Regular, sans-serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 24px;
-    font-weight: bold;
     color: #2c3e50;
     text-decoration: none;
+    font-weight: 700;
 
     &:last-child {
       margin-left: 16%;

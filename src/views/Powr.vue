@@ -93,6 +93,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Avenir, sans-serif;
 }
 .bold {
   font-weight: bold;
