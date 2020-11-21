@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <section class="first-section">
-      <div class="l-heading">EMMA TYSK</div>
+      <div class="l-heading">emma tysk</div>
     </section>
     <div id="nav" class="m-b-50">
       <router-link to="/">Work</router-link>
@@ -16,7 +16,6 @@
 @import "./styles/_mixins.scss";
 
 .first-section {
-  text-align: left;
   margin: auto;
   padding: 4em;
   display: flex;
@@ -26,6 +25,7 @@
 .l-heading {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

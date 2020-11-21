@@ -41,7 +41,7 @@ export default {
         {
           title: "Brezza",
           hover: "Logo for italian restaurant",
-          icon: require("@/assets/brezza/preview.png"),
+          icon: require("@/assets/brezza/brezza.gif"),
         },
         {
           title: "Pantad",

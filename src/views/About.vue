@@ -3,7 +3,7 @@
     <div>
       <p class="m-b-40">
         Hi! My name is Emma Tysk. I am a multifaceted developer studying for a
-        master’s degree in Information Technology at Uppsala University,
+        master’s degree in Human computer interaction at Uppsala University,
         graduating in the spring of 2021.
       </p>
       <p class="m-b-40">

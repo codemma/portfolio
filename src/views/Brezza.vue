@@ -4,7 +4,7 @@
       <div class="work-text">
         <div class="h1">Brezza</div>
         <div class="detail">Graphic design</div>
-        <div class="main-text">
+        <div class="main-text m-t-20">
           <p>
             I was hired to design a logo for a Italian restaurant in my hometown
             Uppsala.
@@ -22,7 +22,7 @@
     </div>
     <div class="gallery">
       <div class="image">
-        <img src="../assets/brezza/preview.png" alt="brezza design" />
+        <img src="../assets/brezza/brezza.gif" alt="brezza design" />
       </div>
     </div>
   </div>
@@ -46,8 +46,13 @@ export default {
 }
 
 .work-text {
-  margin-bottom: 18px;
+  margin: 18px;
   font-size: 14px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Avenir, sans-serif;
   .detail {
     font-family: "IBM Plex Mono", monospace;
     font-style: italic;
