@@ -17,10 +17,12 @@
           The project went through 4 design iterations: wireframing,
           prototyping, a functional prototype which was tested with users and
           lastly a final prototype. The first functional prototype was tested
-          with several users where they were asked to perform tasks on the app,
-          and at the end interviewed about their opinion about the
-          functionalities and the purpose of the app to gain qualatitive data.
-          We designed the interview process and analysed the data. The results
+          with users obervations where they were asked to perform tasks on the
+          app, to gauge if there were any usability issues. Further qualitative
+          data was gathered through user interviews about their opinion of the
+          social functionalities and the safety the app. Would they, for
+          example, feel safe meeting strangers through the app? We designed the
+          interview process, recruited users and analysed the data. The results
           were evaluated and the app was redesigned accordingly as a final step.
         </p>
         <p>
