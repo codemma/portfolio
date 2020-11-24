@@ -36,8 +36,8 @@ const routes = [
     component: Brezza
   },
   {
-    path: '/kgt',
-    name: 'Kgt',
+    path: '/Vårdkällan',
+    name: 'Vårdkällan',
     component: Kgt
   },
   {

@@ -8,11 +8,12 @@
           class="gallery-item"
         >
           <router-link :to="'/' + work.title" class="image">
-            <img :src="work.icon" alt="brezza design" />
+            <img :src="work.icon" />
             <div class="hover">
               <div class="hover-text">
-                <p class="title">{{ work.title }}</p>
-                <p class="subtitle">{{ work.hover }}</p>
+                <div class="title">{{ work.title }}</div>
+                <p class="subtitle">{{ work.description }}</p>
+                <div class="arrow">></div>
               </div>
             </div>
           </router-link>
@@ -29,30 +30,34 @@ export default {
     return {
       works: [
         {
-          title: "Kgt",
-          hover: "App design for a healthcare company",
+          title: "Togather",
+          description:
+            "UI, UX design and user research for an app with the purpose of connecting people with similar interests",
+          icon: require("@/assets/togather/preview.png"),
+        },
+        {
+          title: "Vårdkällan",
+          description:
+            "UI design & illustrations for an app for a healthcare company",
           icon: require("@/assets/kgt/preview.png"),
         },
         {
           title: "Powr",
-          hover: "An app designed to lower students energy consumption",
+          description:
+            "UI, UX design and user resarch for an application to limit power consumption",
           icon: require("@/assets/powr/preview.png"),
         },
+
         {
           title: "Brezza",
-          hover: "Logo for italian restaurant",
+          description: "Logo design for an italian restaurant",
           icon: require("@/assets/brezza/brezza.gif"),
         },
         {
           title: "Pantad",
           icon: require("@/assets/pantad/preview.png"),
-          hover: "An app with the purpose of increasing recycling",
-        },
-        {
-          title: "Togather",
-          hover:
-            "An app with the purpose of connecting people with similar interests ",
-          icon: require("@/assets/togather/preview.png"),
+          description:
+            "UI design for app with the purpose of increasing recycling",
         },
       ],
     };
@@ -133,9 +138,24 @@ export default {
   pointer-events: none;
   font-size: 25px;
   color: black;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 44px);
 
   .title {
     font-weight: 600;
+  }
+
+  .arrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    /*  background-color: #d5f42a;
+    height: 40px;
+    width: 30px; */
+    display: flex;
+    justify-content: center;
   }
 
   .subtitle {

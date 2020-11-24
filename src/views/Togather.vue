@@ -3,7 +3,7 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Togather</div>
-      <div class="detail">App design - Social computing</div>
+      <div class="detail">UI, UX design and user research</div>
       <div class="main-text m-t-20">
         <p>
           This app design is the result of a project in the course Social
@@ -14,29 +14,32 @@
           similar interests, or people who are just seeking new friends.
         </p>
         <p>
+          The project went through 4 design iterations: wireframing,
+          prototyping, a functional prototype which was tested with users and
+          lastly a final prototype. The first functional prototype was tested
+          with several users where they were asked to perform tasks on the app,
+          and at the end interviewed about their opinion about the
+          functionalities and the purpose of the app to gain qualatitive data.
+          We designed the interview process and analysed the data. The results
+          were evaluated and the app was redesigned accordingly as a final step.
+        </p>
+        <p>
           In Togather, users can create and attend events which are visible in a
           list and on a map on the front page. The events are recommended to
           them based on their interest, and each event has a chat group attached
           to it. The purpose of the group chat is to allow people attending the
-          event to make plans, share images or make it a reccuring event.
+          event to make plans, share images or make it a recurring event.
         </p>
         <p>
           The app was purposely designed for strangers to be able to meet. For
           this reason it was very important to include some accountability
           features into the app - to make it possible for users to determine the
           reliability of others. For this reason we added a reputation system to
-          the app, which means active users gains points and badges.
-          Furthermore, users can also report each other for indecent behaviour -
-          which consequently leads to loosing reputation.
-        </p>
-        <p>
-          The project went through 4 design iterations: wireframing,
-          proptotyping, a functional prototype which was tested with users and
-          lastly a final prototype. The first functional prototype was tested
-          with several users where they were asked to perform tasks on the app,
-          and at the end interviewed about their oppinion about the
-          functionalities and the purpose of the app. The results were evaluated
-          and the app was redesigned accordingly as a final step.
+          the app, which means active users gain points and badges by hosting
+          and attending events. Furthermore, users can also report each other
+          for indecent behaviour - which consequently leads to losing reputation
+          - to make people accountable for their actions on and off the
+          platform.
         </p>
       </div>
     </div>
