@@ -3,26 +3,45 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Powr</div>
-      <div class="detail">App design</div>
+      <div class="detail">UI, UX design and user resarch</div>
       <div class="main-text m-t-20">
-        <p>
-          I was responsible for the UX and UI design of the app Pantad for a
-          university project at Uppsala University
-        </p>
+        <p></p>
         <p>
           The goal of the project was to create an application to motivate
-          students who live in student corridors in Sweden to lessen their
-          energy consumption.
+          students who live in dormitories in Sweden to lessen their energy
+          consumption.
         </p>
         <p>
-          We came up with the idea to create a game where a student takes care
-          of an avatar of their choice. By staying below a certain energy
-          consumption treshhold, the avatar stays happy and the student gains
-          points. The users can also compete in different challenges weekly, to
-          keep them interested in the game. The corridor who has the lowest
-          consumption of the week is published on a scoreboard on the app. The
-          users also receive tips and tricks in the app on how to lower their
-          consumption.
+          The project went through 3 iterations: user interviews, wireframing,
+          user observations and lastly a fully functional prototype was made in
+          Adobe XD. Initially we conducted interviews with students to learn
+          about their energy/power consumption and to gauge their current
+          knowledge of their own consumption. Based on the data collected we
+          made design decisions on how to educate them about the topic and how
+          to potentially lower their consumption. However, we also wanted to
+          make the app fun and engaging (as the topic to itself was not
+          interesting to many of the users).
+        </p>
+
+        <p>
+          For this reason we came up with the idea to create a game where a
+          students take care of an avatar of their choice. By staying below a
+          certain energy consumption threshold, the avatar stays happy and the
+          student gains points. The users can also compete in different
+          challenges weekly, to keep them interested in the game. The dormitory
+          who has the lowest consumption of the week is published on a
+          scoreboard on the app. The users also receive tips and tricks in the
+          app on how to lower their consumption.
+        </p>
+        <p>
+          After the wireframes where finished we conducted user observations
+          where students got to test the app. We designed the interview process,
+          recruited users and analysed the data. The results were evaluated and
+          the app was redesigned accordingly as a final step.
+        </p>
+        <p>
+          Our final design won best project of the course, which was such a
+          happy surprise! :)
         </p>
       </div>
     </div>

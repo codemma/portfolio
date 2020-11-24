@@ -3,11 +3,11 @@
     <div id="divider-background" />
     <div class="work-text">
       <div class="h1">Pantad</div>
-      <div class="detail">App design and implementation</div>
+      <div class="detail">UI design and implementation</div>
       <div class="main-text m-t-20">
         <p>
-          I was responsible for the UX and UI design of the app Pantad for a
-          project at Uppsala University.
+          I was responsible for the UI design and illustrations for the app
+          "Pantad" for a project at Uppsala University.
         </p>
         <p>
           The idea behind the app is to increase recycling by letting people

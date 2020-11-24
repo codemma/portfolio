@@ -1,17 +1,19 @@
 <template>
-  <div class="about m-b-40">
+  <div class="about m-b-30">
     <div>
+      <div class="m-b-40">
+        Hi! My name is Emma Tysk and I am a 5th year master’s student studying
+        Human and Computer Interaction at Uppsala University. I excel in
+        projects where I can combine my passion for problem solving with design
+        thinking.
+      </div>
       <p class="m-b-40">
-        Hi! My name is Emma Tysk. I am a multifaceted developer studying for a
-        master’s degree in Human computer interaction at Uppsala University,
-        graduating in the spring of 2021.
+        I have experience working with UI and UX design and I have conducted
+        user research through observations, interviews, A/B testing and eye
+        tracking.
       </p>
-      <p class="m-b-40">
-        I've experience in prototyping, UX design, conducting user interviews,
-        usability testing, wireframing and illustrations.
-      </p>
-      <p>Skilled in Javascript, Vue, React, React Native, Typescript.</p>
-      <p class="m-b-10">Check me out on Github :</p>
+      <p>Proficient in Javascript, Typescript, React Native React and Vue.</p>
+      <p class="m-b-10">Check me out on Github! (if you want to)</p>
       <a href="https://github.com/codemma">
         <img src="../assets/icons/github.svg" alt="github" />
       </a>
