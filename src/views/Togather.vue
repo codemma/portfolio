@@ -18,7 +18,7 @@
           research, download the report below! :)
         </p>
         <a :href="`${publicPath}togather.pdf`" download="Togather_report.pdf"
-          >Togather - Report (PDF)</a
+          ><b>Togather - Report (PDF)</b></a
         >
 
         <p>
