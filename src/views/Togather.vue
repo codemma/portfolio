@@ -14,6 +14,14 @@
           similar interests, or people who are just seeking new friends.
         </p>
         <p>
+          If you want to read about the entire design process and the user
+          research, download the report below! :)
+        </p>
+        <a :href="`${publicPath}togather.pdf`" download="Togather_report.pdf"
+          >Togather - Report (PDF)</a
+        >
+
+        <p>
           The project went through 4 design iterations: wireframing,
           prototyping, a functional prototype which was tested with users and
           lastly a final prototype. The first functional prototype was tested
@@ -71,7 +79,11 @@
 <script>
 export default {
   name: "Brezza",
-  props: {},
+  data() {
+    return {
+      publicPath: process.env.BASE_URL,
+    };
+  },
 };
 </script>
 <style scoped lang="scss">
@@ -85,6 +97,14 @@ export default {
   align-items: center;
   z-index: 3;
   font-family: Avenir, sans-serif;
+
+  a {
+    color: hotpink;
+    text-decoration: none;
+    &:active {
+      color: black;
+    }
+  }
 }
 .span-row {
   min-width: 100%;
