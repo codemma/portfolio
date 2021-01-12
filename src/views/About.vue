@@ -12,7 +12,10 @@
         user research through observations, interviews, A/B testing and eye
         tracking.
       </p>
-      <p>Proficient in Javascript, Typescript, React Native React and Vue.</p>
+      <p>
+        Skilled in Javascript, React and Vue. I also have experience working
+        with Java, Node.js and React Native
+      </p>
       <p class="m-b-10">Check me out on Github! (if you want to)</p>
       <a href="https://github.com/codemma">
         <img src="../assets/icons/github.svg" alt="github" />
