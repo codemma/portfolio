@@ -10,6 +10,11 @@ npm install
 npm run serve
 ```
 
+### Builds and deploys
+```
+bash deploy.sh
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
