@@ -1,29 +1,18 @@
 <template>
   <div class="work-page m-b-50">
     <div id="divider-background" />
-    <div class="h1">Powr</div>
-    <div class="detail m-b-20">UI, UX design and user resarch</div>
-    <div class="gallery-flex m-b-20">
-      <div class="image m-b-20">
-        <img src="../assets/powr/screen-2.png" alt="pantad design" />
-      </div>
-      <div class="image-md m-b-20">
-        <img src="../assets/powr/screen-1.png" alt="pantad design" />
-      </div>
-      <div class="image m-b-20">
-        <img src="../assets/powr/screen-3.png" alt="pantad design" />
-      </div>
-    </div>
     <div class="work-text">
-      <div class="main-text m-t-20">
-        <!--  <div class="gallery-flex m-b-20">
-          <div class="image span-row m-b-20">
-            <img src="../assets/powr/screen-1.png" alt="brezza design" />
+      <div class="h1">Powr</div>
+      <div class="detail m-b-30">UI, UX design and user resarch</div>
+      <div class="main-text">
+        <div class="gallery-flex">
+          <div class="image-small span-row m-b-20">
+            <img src="../assets/powr/robotic.png" alt="brezza design" />
           </div>
-        </div> -->
+        </div>
         <p>
-          The goal of the project was to create an application to motivate
-          students who live in dormitories in Sweden to lessen their energy
+          The goal of this project was to create an app to motivate students who
+          live in dormitories in Sweden to keep track of and lessen their energy
           consumption.
         </p>
         <p>
@@ -62,13 +51,13 @@
     </div>
     <div class="gallery-flex m-b-20">
       <div class="image m-b-20">
-        <img src="../assets/powr/screen-3.png" alt="pantad design" />
-      </div>
-      <div class="image-md m-b-20">
         <img src="../assets/powr/screen-2.png" alt="pantad design" />
       </div>
+      <div class="image-md m-b-20">
+        <img src="../assets/powr/screen-1.png" alt="pantad design" />
+      </div>
       <div class="image m-b-20">
-        <img src="../assets/powr/screen-4.png" alt="pantad design" />
+        <img src="../assets/powr/screen-3.png" alt="pantad design" />
       </div>
     </div>
   </div>
@@ -105,10 +94,22 @@ export default {
   flex: 0 0 1;
 }
 
+.gallery-flex .image-small {
+  max-width: 100%;
+  img {
+    max-width: 80px;
+    max-height: 100%;
+
+    @include for-phone-only {
+      max-width: 80px;
+    }
+  }
+}
+
 .gallery-flex .image-md {
   max-width: 100%;
   img {
-    max-width: 260px;
+    max-width: 280px;
     max-height: 100%;
 
     @include for-phone-only {
@@ -129,11 +130,6 @@ export default {
   }
 }
 
-.detail {
-  font-family: "IBM Plex Mono", monospace;
-  font-style: italic;
-}
-
 .work-text {
   margin: 18px;
   font-size: 14px;
@@ -142,6 +138,10 @@ export default {
   flex-direction: column;
   align-items: center;
   font-family: Avenir, sans-serif;
+  .detail {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: italic;
+  }
 }
 .bold {
   font-weight: bold;
