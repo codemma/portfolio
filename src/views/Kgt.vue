@@ -2,12 +2,20 @@
   <div class="work-page m-b-50">
     <div id="divider-background" />
     <div class="work-text">
-      <div class="h1">Vårdkällan</div>
-      <div class="detail">App design and Illustrations</div>
+      <div class="gallery-flex">
+        <div class="image-small">
+          <img src="../assets/kgt/logo-notext.png" alt="kgt design" />
+        </div>
+      </div>
+      <div class="h1 m-t-20">Vårdkällan</div>
+      <div class="detail">UI design and Illustrations</div>
       <div class="main-text m-t-20">
         <p>
-          I was responsible for the UX and UI design of the app for a healthcare
-          company in Uppsala
+          I was the lead designer for an for a new app for a healthcare company
+          in Sweden: Vårdkällan. I was responsible for the <b>UI design</b>, the
+          <b>illustrations, icons and logo</b>. I created high and low fidelity
+          prototypes in Adobe XD and worked in Sketch to create the logo (seen
+          above), the illustrations and the logo.
         </p>
         <p>
           The goal of the app is to make it easier and more flexible for nurses
@@ -17,13 +25,14 @@
           after finishing a job.
         </p>
         <p>
-          The project scope was very time limited and therefore I had to produce
-          a full design with sketches in only 3 weeks. Below are some selected
-          screens and illustrations from the finished design.
+          The main challenge with this project was a tight schedule. Due to time
+          limitations I had to produce a full design with sketches in only 3
+          weeks. Below are some selected screens and illustrations from the
+          finished design! :)
         </p>
       </div>
     </div>
-    <div class="h3 m-b-30">App design</div>
+    <div class="h3 m-t-20 m-b-30">App design</div>
     <div class="gallery-container">
       <div class="blue-divider">
         <img src="../assets/kgt/divider.svg" alt="kgt design" />
@@ -107,6 +116,18 @@ export default {
   max-width: 100%;
   img {
     max-width: 240px;
+    max-height: 100%;
+
+    @include for-phone-only {
+      max-width: 180px;
+    }
+  }
+}
+
+.gallery-flex .image-small {
+  max-width: 100%;
+  img {
+    max-width: 40px;
     max-height: 100%;
 
     @include for-phone-only {

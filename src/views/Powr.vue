@@ -1,26 +1,41 @@
 <template>
   <div class="work-page m-b-50">
     <div id="divider-background" />
+    <div class="h1">Powr</div>
+    <div class="detail m-b-20">UI, UX design and user resarch</div>
+    <div class="gallery-flex m-b-20">
+      <div class="image m-b-20">
+        <img src="../assets/powr/screen-2.png" alt="pantad design" />
+      </div>
+      <div class="image-md m-b-20">
+        <img src="../assets/powr/screen-1.png" alt="pantad design" />
+      </div>
+      <div class="image m-b-20">
+        <img src="../assets/powr/screen-3.png" alt="pantad design" />
+      </div>
+    </div>
     <div class="work-text">
-      <div class="h1">Powr</div>
-      <div class="detail">UI, UX design and user resarch</div>
       <div class="main-text m-t-20">
-        <p></p>
+        <!--  <div class="gallery-flex m-b-20">
+          <div class="image span-row m-b-20">
+            <img src="../assets/powr/screen-1.png" alt="brezza design" />
+          </div>
+        </div> -->
         <p>
           The goal of the project was to create an application to motivate
           students who live in dormitories in Sweden to lessen their energy
           consumption.
         </p>
         <p>
-          The project went through 3 iterations: user interviews, wireframing,
-          user observations and lastly a fully functional prototype was made in
-          Adobe XD. Initially we conducted interviews with students to learn
-          about their energy/power consumption and to gauge their current
-          knowledge of their own consumption. Based on the data collected we
-          made design decisions on how to educate them about the topic and how
-          to potentially lower their consumption. However, we also wanted to
-          make the app fun and engaging (as the topic to itself was not
-          interesting to many of the users).
+          The project went through 3 iterations: <b>user interviews</b>,
+          <b>wireframing</b>, <b>user observations</b> and lastly a fully
+          functional prototype was made in Adobe XD. Initially we conducted
+          interviews with students to learn about their energy/power consumption
+          and to gauge their current knowledge of their own consumption. Based
+          on the data collected we made design decisions on how to educate them
+          about the topic and how to potentially lower their consumption.
+          However, we also wanted to make the app fun and engaging (as the topic
+          to itself was not interesting to many of the users).
         </p>
 
         <p>
@@ -46,14 +61,11 @@
       </div>
     </div>
     <div class="gallery-flex m-b-20">
-      <div class="image span-row m-b-20">
-        <img src="../assets/powr/screen-1.png" alt="brezza design" />
-      </div>
-      <div class="image m-b-20">
-        <img src="../assets/powr/screen-2.png" alt="pantad design" />
-      </div>
       <div class="image m-b-20">
         <img src="../assets/powr/screen-3.png" alt="pantad design" />
+      </div>
+      <div class="image-md m-b-20">
+        <img src="../assets/powr/screen-2.png" alt="pantad design" />
       </div>
       <div class="image m-b-20">
         <img src="../assets/powr/screen-4.png" alt="pantad design" />
@@ -93,6 +105,18 @@ export default {
   flex: 0 0 1;
 }
 
+.gallery-flex .image-md {
+  max-width: 100%;
+  img {
+    max-width: 260px;
+    max-height: 100%;
+
+    @include for-phone-only {
+      max-width: 180px;
+    }
+  }
+}
+
 .gallery-flex .image {
   max-width: 100%;
   img {
@@ -105,6 +129,11 @@ export default {
   }
 }
 
+.detail {
+  font-family: "IBM Plex Mono", monospace;
+  font-style: italic;
+}
+
 .work-text {
   margin: 18px;
   font-size: 14px;
@@ -113,10 +142,6 @@ export default {
   flex-direction: column;
   align-items: center;
   font-family: Avenir, sans-serif;
-  .detail {
-    font-family: "IBM Plex Mono", monospace;
-    font-style: italic;
-  }
 }
 .bold {
   font-weight: bold;
