@@ -1,15 +1,21 @@
 <template>
   <div class="work-page m-b-50">
     <div id="divider-background" />
+    <div class="h1">Powr</div>
+    <div class="detail m-b-30">UI, UX design and user research</div>
+    <div class="gallery-flex m-t-10 m-b-10">
+      <div class="image">
+        <img src="../assets/powr/screen-2.png" alt="pantad design" />
+      </div>
+      <div class="image-md">
+        <img src="../assets/powr/screen-1.png" alt="pantad design" />
+      </div>
+      <div class="image">
+        <img src="../assets/powr/screen-3.png" alt="pantad design" />
+      </div>
+    </div>
     <div class="work-text">
-      <div class="h1">Powr</div>
-      <div class="detail m-b-30">UI, UX design and user resarch</div>
       <div class="main-text">
-        <div class="gallery-flex">
-          <div class="image-small span-row m-b-20">
-            <img src="../assets/powr/robotic.png" alt="brezza design" />
-          </div>
-        </div>
         <p>
           The goal of this project was to create an app to motivate students who
           live in dormitories in Sweden to keep track of and lessen their energy
@@ -49,17 +55,6 @@
         </p>
       </div>
     </div>
-    <div class="gallery-flex m-b-20">
-      <div class="image m-b-20">
-        <img src="../assets/powr/screen-2.png" alt="pantad design" />
-      </div>
-      <div class="image-md m-b-20">
-        <img src="../assets/powr/screen-1.png" alt="pantad design" />
-      </div>
-      <div class="image m-b-20">
-        <img src="../assets/powr/screen-3.png" alt="pantad design" />
-      </div>
-    </div>
   </div>
 </template>
 
@@ -79,6 +74,8 @@ export default {
   flex-direction: column;
   align-items: center;
   z-index: 3;
+  align-items: center;
+  font-family: Avenir, sans-serif;
 }
 .span-row {
   min-width: 100%;
@@ -109,7 +106,7 @@ export default {
 .gallery-flex .image-md {
   max-width: 100%;
   img {
-    max-width: 280px;
+    max-width: 260px;
     max-height: 100%;
 
     @include for-phone-only {
@@ -121,7 +118,7 @@ export default {
 .gallery-flex .image {
   max-width: 100%;
   img {
-    max-width: 240px;
+    max-width: 220px;
     max-height: 100%;
 
     @include for-phone-only {
@@ -130,18 +127,19 @@ export default {
   }
 }
 
-.work-text {
+.detail {
+  font-family: "IBM Plex Mono", monospace;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.main-text {
   margin: 18px;
   font-size: 14px;
   max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Avenir, sans-serif;
-  .detail {
-    font-family: "IBM Plex Mono", monospace;
-    font-style: italic;
-  }
 }
 .bold {
   font-weight: bold;

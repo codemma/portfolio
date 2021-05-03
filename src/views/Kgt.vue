@@ -131,7 +131,7 @@ export default {
     max-height: 100%;
 
     @include for-phone-only {
-      max-width: 180px;
+      max-width: 40px;
     }
   }
 }

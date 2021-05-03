@@ -44,7 +44,7 @@ export default {
         {
           title: "Powr",
           description:
-            "UI, UX design and user resarch for an application to limit power consumption",
+            "UI, UX design and user research for an application to limit power consumption",
           icon: require("@/assets/powr/preview.png"),
         },
 
