@@ -6,6 +6,7 @@ import Kgt from '../views/Kgt.vue'
 import Pantad from '../views/Pantad.vue'
 import Powr from '../views/Powr.vue'
 import Togather from '../views/Togather.vue'
+import Aloha from '../views/Aloha.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,11 @@ const routes = [
     path: '/',
     name: 'Work',
     component: Work
+  },
+  {
+    path: '/Aloha',
+    name: 'Aloha',
+    component: Aloha,
   },
   {
     path: '/Togather',

@@ -48,7 +48,7 @@ export default {
 .work-text {
   margin: 18px;
   font-size: 14px;
-  max-width: 400px;
+ max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;

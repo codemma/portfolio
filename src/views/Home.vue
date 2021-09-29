@@ -30,6 +30,12 @@ export default {
     return {
       works: [
         {
+          title: "Aloha",
+          description:
+            "UI, UX design and user research for an application with the purpose of connecting musicians across the globe",
+          icon: require("@/assets/aloha/preview2.png"),
+        },
+        {
           title: "Togather",
           description:
             "UI, UX design and user research for an app with the purpose of connecting people with similar interests",
