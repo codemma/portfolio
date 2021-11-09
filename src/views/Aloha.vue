@@ -3,21 +3,15 @@
     <div class="container">
       <div class="work-text">
         <div class="h1">Aloha</div>
-        <div class="detail">UX & UI design, Branding, User research & analysis </div>
-      <div class="gallery">
+        <div class="detail">UX & UI design, User research & analysis </div>
+    <!--   <div class="gallery">
       <div class="image-smallest"> 
         <img src="../assets/aloha/preview2.png" alt="discover page" />
       </div>
-      </div>
+      </div> -->
         <div class="main-text m-t-20">
           <p>
-            Aloha is a hardware device and web application, which allows musicians to play online with the lowest
-possible latency. The previous version of Aloha was only intended for musicians
-who already knew each other to connect and play, and lacked any social and networking
-features, which would enable new musical interactions and networks to form. This is
-where this project came in.</p>
-<p>
-The purpose of this project was to design the next version of the web-based interface
+            Aloha is a hardware device and web application, which allows musicians to play together online. The purpose of this project was to design the next version of the web-based interface
 of Aloha, focusing on social interactions. The goal was to make it the go-to alternative
 to playing together physically, and a destination for musicians to expand their network
 and make new musical connections and collaborations. To understand the goals and
@@ -27,7 +21,7 @@ and presented in different themes, which emerged through the analysis. Based on 
 themes, user stories and personas were composed, which together laid the foundation
 for the design of the prototype. </p>
 <p>
-I was responsible for the design, color and prototyping of the entre application together with my classmate Ester. I was solely responsible for some branding elements, as the logo shown above.
+I was responsible for the user research and prototyping of the entre application.
 The resulting prototype consists of five main pages: ”Discover”, ”Groups & Bands”,
 ”Musicians”, ”Sessions” and ”Profile”. Some selected screens and UI elements are shown below.
 </p>
@@ -110,7 +104,7 @@ export default {
 .work-text {
   margin: 18px;
   font-size: 14px;
-  max-width: 500px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +123,6 @@ export default {
 }
 
 .container {
-  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
